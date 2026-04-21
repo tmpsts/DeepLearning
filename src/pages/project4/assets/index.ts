@@ -1,0 +1,15 @@
+export { default as autoencoder_latent_8 } from "./autoencoder_latent_8.png";
+export { default as autoencoder_latent_32 } from "./autoencoder_latent_32.png";
+export { default as autoencoder_sample_2 } from "./autoencoder_sample_2.png";
+export { default as autoencoder_sample_8 } from "./autoencoder_sample_8.png";
+export { default as autoencoder_sample_32 } from "./autoencoder_sample_32.png";
+export { default as autoencoder_training } from "./autoencoder_training.png";
+export { default as gan_leaky_pokemon } from "./gan_leaky_pokemon.png";
+export { default as gan_leaky_training } from "./gan_leaky_training.png";
+export { default as gan_relu_pokemon } from "./gan_relu_pokemon.png";
+export { default as gan_relu_training } from "./gan_relu_training.png";
+export { default as pokemon_training } from "./pokemon_training.png";
+export { default as vae_latent_1 } from "./vae_latent_1.png";
+export { default as vae_latent_5 } from "./vae_latent_5.png";
+export { default as vae_sample } from './vae_sample.png';
+export { default as vae_training } from './vae_training.png';

@@ -1,3 +1,3 @@
 # Deep Learning
 
-Respository for my CSCI 492 Deep Learning coursework
+Repository for my CSCI 492 Deep Learning coursework
