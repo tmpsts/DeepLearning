@@ -9,6 +9,13 @@ type ProjectEntry = {
 
 const projects: ProjectEntry[] = [
   {
+    to: "/project5",
+    label: "Project 5",
+    title: "AI Agent for LaTeX Optimization",
+    description:
+      "An AI agent pipeline that, through OpenRouter, automates a practical workflow: optimizing a LaTeX project by reducing its size while preserving visual quality.",
+  },
+  {
     to: "/project4",
     label: "Project 4",
     title: "Generative Models: VAE and GANs",

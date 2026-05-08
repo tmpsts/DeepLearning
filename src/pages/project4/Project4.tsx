@@ -1,42 +1,31 @@
-import { Link } from "react-router";
+import {
+  ArticleFooter,
+  ArticleHeader,
+  ArticleLayout,
+  BackLink,
+  Divider,
+  Figure,
+  P,
+  Section,
+  Subsection,
+} from "../../components/article";
 
 import * as assets from "./assets";
 
 export default function Project4Page() {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="mx-auto max-w-[720px] px-6 pb-24 pt-10">
-        <nav className="mb-12">
-          <Link
-            to="/"
-            className="font-sans text-sm text-ink-muted transition-colors hover:text-ink-strong"
-          >
-            Home
-          </Link>
-        </nav>
-
-        <article>
-          <header className="mb-12">
-            <p className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.18em] text-ink-faint">
-              Project 4
-            </p>
-            <h1 className="mb-6 font-sans text-4xl font-extrabold leading-[1.12] tracking-tight text-ink-strong md:text-5xl">
-              Generative Models: VAE and GANs
-            </h1>
-            <p className="mb-8 text-lg leading-relaxed text-ink-muted md:text-xl">
-              Implementation and analysis of the Variational Autoencoder (VAE)
-              and Deep Convolutional GAN (DCGAN) model architectures, trained on
-              the MNIST and Pokemon datasets respectively.
-            </p>
-            <div className="border-y border-rule py-5 font-sans">
-              <p className="text-base font-medium text-ink-strong">
-                Matthew Denton
-              </p>
-              <p className="mt-1 text-sm text-ink-muted">
-                CSCI 492 - Deep Learning - April 20th, 2026
-              </p>
-            </div>
-          </header>
+    <ArticleLayout>
+      <BackLink />
+      <article>
+        <ArticleHeader
+          label="Project 4"
+          title="Generative Models: VAE and GANs"
+          subtitle="Implementation and analysis of the Variational Autoencoder (VAE) and Deep Convolutional GAN (DCGAN) model architectures, trained on the MNIST and Pokemon datasets respectively."
+          byline={{
+            author: "Matthew Denton",
+            meta: "CSCI 492 - Deep Learning - April 20th, 2026",
+          }}
+        />
 
           <Section title="Introduction">
             <P>
@@ -355,93 +344,8 @@ export default function Project4Page() {
             </Subsection>
           </Section>
 
-          <footer className="mt-20 border-t border-rule pt-8">
-            <Link
-              to="/"
-              className="font-sans text-sm text-ink-muted transition-colors hover:text-ink-strong"
-            >
-              Back to home
-            </Link>
-          </footer>
-        </article>
-      </div>
-    </div>
-  );
-}
-
-function Section({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <section className="mt-14 first:mt-0">
-      <h2 className="mb-6 font-sans text-3xl font-bold leading-tight tracking-tight text-ink-strong md:text-[2rem]">
-        {title}
-      </h2>
-      {children}
-    </section>
-  );
-}
-
-function Subsection({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="mt-10 first:mt-0">
-      <h3 className="mb-5 font-sans text-xl font-semibold leading-snug tracking-tight text-ink-strong md:text-2xl">
-        {title}
-      </h3>
-      {children}
-    </div>
-  );
-}
-
-function P({ children }: { children: React.ReactNode }) {
-  return (
-    <p className="mb-7 text-[1.125rem] leading-[1.7] text-ink md:text-[1.1875rem]">
-      {children}
-    </p>
-  );
-}
-
-function Divider() {
-  return (
-    <div
-      aria-hidden
-      className="my-16 text-center font-sans text-2xl tracking-[0.5em] text-ink-faint"
-    >
-      · · ·
-    </div>
-  );
-}
-
-function Figure({
-  src,
-  alt,
-  index,
-}: {
-  src: string;
-  alt: string;
-  index: number;
-}) {
-  return (
-    <figure className="my-10">
-      <img
-        src={src}
-        alt={alt}
-        className="w-full rounded-sm border border-rule"
-      />
-      <figcaption className="mt-3 text-center font-sans text-sm leading-relaxed text-ink-faint">
-        <span className="font-medium text-ink-muted">Figure {index}.</span>{" "}
-        {alt}
-      </figcaption>
-    </figure>
+        <ArticleFooter />
+      </article>
+    </ArticleLayout>
   );
 }
