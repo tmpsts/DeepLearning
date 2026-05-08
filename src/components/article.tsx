@@ -158,7 +158,9 @@ export function Figure({
       <figcaption className="mt-3 text-center font-sans text-sm leading-relaxed text-ink-faint">
         {index !== undefined && (
           <>
-            <span className="font-medium text-ink-muted">Figure {index}.</span>{" "}
+            <span className="font-medium text-ink-muted">
+              Figure {index}.
+            </span>{" "}
           </>
         )}
         {text}
@@ -257,7 +259,7 @@ export function Table({
             {rows.map((row, rIdx) => (
               <tr
                 key={rIdx}
-                className="border-b border-rule last:border-b-0 [&:nth-child(even)]:bg-[#fcfcfa]"
+                className="border-b border-rule last:border-b-0 even:bg-[#fcfcfa]"
               >
                 {row.map((cell, cIdx) => (
                   <td

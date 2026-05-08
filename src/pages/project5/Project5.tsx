@@ -8,7 +8,6 @@ import {
   Figure,
   List,
   P,
-  Pass,
   Section,
   Table,
 } from "../../components/article";
